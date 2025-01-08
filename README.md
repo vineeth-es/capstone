@@ -1,2 +1,0 @@
-# capstone
-learning some react
