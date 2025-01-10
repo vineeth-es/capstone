@@ -1,0 +1,15 @@
+.cards {
+    border-radius: 16px;
+    background-color: #EDEFEE;
+    width: 240px;
+}
+
+.cardImg {
+    width: 100%;
+    border-radius: 16px;
+}
+
+p {
+    padding: 16px;
+    line-height: 18px;
+}

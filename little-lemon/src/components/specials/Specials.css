@@ -1,0 +1,14 @@
+.specials {
+    padding: 0 15%;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0 48px;
+}
+
+.cardsSec {
+    display: flex;
+    justify-content: space-between;
+}

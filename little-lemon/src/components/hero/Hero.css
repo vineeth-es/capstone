@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    background-color: #495E57;
+    align-items: center;
+    padding: 0 15%;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    color: #EDEFEE;
+    font-size: 18px;
+}
+
+h1 {
+    color: #F4CE14;
+    font-size: 64px;
+}
+
+h3 {
+    margin-bottom: 8px;
+    font-size: 40px;
+
+}
+
+.heroImg {
+    width: 240px;
+    border-radius: 16px;
+    margin: 64px 0 -64px 0;
+    height: 280px;
+}
+

@@ -1,0 +1,22 @@
+ul {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+    justify-content: space-between;
+    width: 620px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+ul li {
+    cursor: pointer;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: #ccc;
+}
+
+ul li:hover {
+    background-color: #495E57;
+    color: #EDEFEE;
+}
