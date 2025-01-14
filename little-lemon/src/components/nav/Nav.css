@@ -20,3 +20,14 @@ ul li:hover {
     background-color: #495E57;
     color: #EDEFEE;
 }
+
+.nav-link {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    color: #EDEFEE;
+    text-decoration: none;
+}

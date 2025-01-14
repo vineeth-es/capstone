@@ -7,6 +7,7 @@
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.1",
     "react-scripts": "5.0.1"
   },
   "scripts": {
@@ -19,7 +20,15 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "globals": {
+      "fetchAPI": "readonly",
+      "submitAPI": "readonly"
+    },
+    "parserOptions": {
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    }
   },
   "browserslist": {
     "production": [
@@ -34,9 +43,12 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
     "@types/react": "^19.0.4",
     "@types/react-dom": "^19.0.2",
     "eslint": "^8.57.1",
+    "jest": "^27.5.1",
     "typescript": "^5.7.3",
     "web-vitals": "^4.2.4"
   }

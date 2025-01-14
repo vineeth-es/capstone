@@ -8,11 +8,11 @@ import Specials from '../../components/specials/Specials';
 function Landing() {
   return (
     <div className="landing">
-     <Suspense  fallback='Loading...'>
+      <Suspense fallback='Loading...'>
         <Header></Header>
         <Hero></Hero>
         <Specials></Specials>
-     </Suspense>
+      </Suspense>
     </div>
   );
 }
