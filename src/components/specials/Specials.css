@@ -17,3 +17,16 @@
 .title-specials {
     font-size: 32px;
 }
+
+@media (max-width: 1050px) {
+    .cardsSec {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        flex-direction: column;
+    }
+}

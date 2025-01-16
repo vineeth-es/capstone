@@ -1,8 +1,7 @@
 import './Nav.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faBars } from '@fortawesome/free-solid-svg-icons';
+import  ham from '../../assets/icon _hamburger menu.svg';
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,29 +11,54 @@ function Nav() {
   };
 
   return (
-    <nav className="nav">
-      {/* <FontAwesomeIcon icon={faBars} className="hamburger" onClick={toggleMenu} /> */}
-      <ul className={`nav-ul ${isOpen ? 'active' : ''}`}>
-        <li className="nav-li">
-          <Link className="nav-link" to="/">Home</Link>
-        </li>
-        <li className="nav-li">
-          <Link className="nav-link" to="/about">About</Link>
-        </li>
-        <li className="nav-li">
-          <Link className="nav-link" to="/menu">Menu</Link>
-        </li>
-        <li className="nav-li">
-          <Link className="nav-link" to="/reservations">Reservations</Link>
-        </li>
-        <li className="nav-li">
-          <Link className="nav-link" to="/order-online">Order Online</Link>
-        </li>
-        <li className="nav-li">
-          <Link className="nav-link" to="/login">Login</Link>
-        </li>
-      </ul>
-    </nav>
+    <>
+      <nav className="nav">
+        <ul className="nav-ul">
+          <li className="nav-li">
+            <Link className="nav-link" to="/">Home</Link>
+          </li>
+          <li className="nav-li">
+            <Link className="nav-link" to="/">About</Link>
+          </li>
+          <li className="nav-li">
+            <Link className="nav-link" to="/">Menu</Link>
+          </li>
+          <li className="nav-li">
+            <Link className="nav-link" to="/">Reservations</Link>
+          </li>
+          <li className="nav-li">
+            <Link className="nav-link" to="/">Order Online</Link>
+          </li>
+          <li className="nav-li">
+            <Link className="nav-link" to="/">Login</Link>
+          </li>
+        </ul>
+        <img src={ham} alt='mobile menu' className="hamburger" onClick={toggleMenu} />
+      </nav>
+
+      <nav className={`nav-mobile ${isOpen ? 'active' : ''}`}>
+        <ul className="nav-mobile-ul">
+          <li className="nav-mobile-li">
+            <Link className="nav-mobile-link" to="/">Home</Link>
+          </li>
+          <li className="nav-mobile-li">
+            <Link className="nav-mobile-link" to="/">About</Link>
+          </li>
+          <li className="nav-mobile-li">
+            <Link className="nav-mobile-link" to="/">Menu</Link>
+          </li>
+          <li className="nav-mobile-li">
+            <Link className="nav-mobile-link" to="/">Reservations</Link>
+          </li>
+          <li className="nav-mobile-li">
+            <Link className="nav-mobile-link" to="/">Order Online</Link>
+          </li>
+          <li className="nav-mobile-li">
+            <Link className="nav-mobile-link" to="/">Login</Link>
+          </li>
+        </ul>
+      </nav>
+    </>
   );
 }
 

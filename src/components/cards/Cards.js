@@ -14,22 +14,24 @@ const handleOrder = (id) => {
   }).then((result) => {
     if (result.isConfirmed) {
       Swal.fire({
-        title: "orderd!",
-        text: "Your order has been processing.",
+        title: "Ordered!",
+        text: "Your order is being processed.",
         icon: "success"
       });
     }
   });
 }
 
-function Cards({id, title, price, image, description }) {
+function Cards({ id, title, price, image, description }) {
   return (
-    <section className="cards">
-      <img className="cardImg" src={image} alt='card food' />
-      <div className='itemdetails'><span className='itemname'>{title}</span><span className='price'>{price}</span></div>
+    <section className="cards" aria-labelledby={`card-title-${id}`}>
+      <img className="cardImg" src={image} alt={`${title} image`} />
+      <div className="itemdetails">
+        <h2 id={`card-title-${id}`} className="itemname">{title}</h2>
+        <span className="price">${price}</span>
+      </div>
       <p className="cardsDesc">{description}</p>
-      {/* <div className='oad'><span>Order Now</span><img src={basket} alt='basket' width='24px' /></div> */}
-      <button className="btn pd16" onClick={() => handleOrder(id)}>Order Now</button>
+      <button className="btn pd16" onClick={() => handleOrder(id)} aria-label={`Order ${title}`}>Order Now</button>
     </section>
   );
 }
