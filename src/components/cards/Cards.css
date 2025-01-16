@@ -1,0 +1,36 @@
+.cards {
+    border-radius: 16px;
+    background-color: #EDEFEE;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardImg {
+    width: 100%;
+    border-radius: 16px;
+    height: 160px;
+}
+
+.cardsDesc {
+    padding: 16px;
+    line-height: 18px;
+    color: #333;
+}
+
+.itemdetails {
+    font-weight: bold;
+    padding: 16px 16px 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.price {
+    color: #EE9972;
+}
+
+.pd16 {
+    margin: 16px;
+}

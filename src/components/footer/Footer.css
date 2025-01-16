@@ -1,0 +1,39 @@
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    background: #EDEFEE;
+    padding: 24px;
+    margin-top: 50px;
+}
+
+.res-info {
+    width: 30%
+}
+
+ul.footer-ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+li.footer-li {
+    cursor: pointer;
+    color: #333;
+    border-radius: 8px;
+}
+
+li.footer-li:hover {
+    background-color: #495E57;
+    color: #EDEFEE;
+}
+
+.foo-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.foo-link:hover {
+    color: #EDEFEE;
+    text-decoration: none;
+    padding: 0 4px;
+}

@@ -1,0 +1,63 @@
+.booking-form-container {
+    display: flex;
+    justify-content: center;
+    background-color: #495E57;
+    align-items: center;
+    padding: 32px;
+}
+
+form {
+    display: grid;
+    max-width: 250px;
+    gap: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #EDEFEE;
+    padding: 8px;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 0;
+    height: 32px;
+}
+
+.error {
+    color: rgb(126, 27, 27);
+    font-size: 12px;
+}
+
+.btn-submit {
+    background-color: #F4CE14;
+    color: #333;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.form-div {
+    margin: 8px;
+}
